@@ -249,4 +249,4 @@ This project is licensed under the MIT License.
 - [Oviasree S]
 
 
-For any issues or questions, please open an issue on GitHub or contact the project maintainer.
+For any issues or questions, please contact the project maintainer.
