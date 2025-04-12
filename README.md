@@ -55,10 +55,16 @@ Before you begin, ensure you have the following:
 ## ⚙️ Setup and Installation
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/interntrack.git
-cd interntrack
-```
+git clone https://github.com/prathiyangira25/InternTrack-MERN-Based-Internship-Tracker.git
+cd InternTrack-MERN-Based-Internship-Tracker
+
+It is recommended to create a new branch for your work to keep the main branch clean. You can create a new branch using the following command:
+
+git checkout -b your-branch-name
+
+Now, you can make changes and commit them to this branch. When you're done with your changes, you can push the branch to your forked repository and create a pull request.
+
+git push origin your-branch-name
 
 ### 2. Environment Variables
 Create a `.env` file in the `backend` directory and add the following:
