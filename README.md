@@ -56,6 +56,7 @@ Before you begin, ensure you have the following:
 
 ### 1. Clone the Repository
 git clone https://github.com/prathiyangira25/InternTrack-MERN-Based-Internship-Tracker.git
+
 cd InternTrack-MERN-Based-Internship-Tracker
 
 It is recommended to create a new branch for your work to keep the main branch clean. You can create a new branch using the following command:
