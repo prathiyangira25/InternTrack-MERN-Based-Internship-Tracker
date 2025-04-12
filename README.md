@@ -244,8 +244,9 @@ npm install react-toastify@latest
 This project is licensed under the MIT License.
 
 ## 👥 Contributors
-- Prathiyangira Devi V C
-- Padala Praneetha
-- Oviasree S
+- [Prathiyangira Devi V C](https://github.com/prathiyangira25)
+- [Padala Praneetha](https://github.com/PRANEETHAPADALA)
+- [Oviasree S]
+
 
 For any issues or questions, please open an issue on GitHub or contact the project maintainer.
