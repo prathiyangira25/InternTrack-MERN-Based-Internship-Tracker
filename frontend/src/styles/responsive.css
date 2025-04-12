@@ -1,0 +1,408 @@
+/* Responsive CSS for InternTrack Application */
+
+/* Large Screens (Desktops) */
+@media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  /* Medium Screens (Laptops and Small Desktops) */
+  @media screen and (max-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    
+    /* Dashboard Stats */
+    .stats-row {
+      flex-wrap: wrap;
+    }
+    
+    .stat-card {
+      flex: 0 0 calc(50% - 10px);
+      min-width: auto;
+    }
+    
+    /* Internship Cards */
+    .internship-cards {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    /* Forms */
+    .form-container {
+      max-width: 700px;
+    }
+  }
+  
+  /* Small Screens (Tablets) */
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 720px;
+      padding: 15px;
+    }
+    
+    /* Header */
+    .header-container {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+    
+    .nav-links {
+      width: 100%;
+      justify-content: flex-start;
+      overflow-x: auto;
+      padding-bottom: 5px;
+    }
+    
+    /* Dashboard */
+    .stat-card {
+      flex: 0 0 100%;
+    }
+    
+    .batch-stats, .company-stats {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    /* Internship Cards */
+    .internship-cards {
+      grid-template-columns: 1fr;
+    }
+    
+    /* Forms */
+    .form-row {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .form-progress {
+      width: 100%;
+      justify-content: space-around;
+    }
+    
+    .progress-line {
+      width: 60px;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+    }
+    
+    .form-actions button {
+      width: 100%;
+    }
+    
+    /* Details Grids */
+    .details-grid, .documents-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    /* Tables */
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    
+    th, td {
+      padding: 10px;
+    }
+    
+    /* Reports */
+    .report-form {
+      flex-direction: column;
+    }
+    
+    .report-filter {
+      width: 100%;
+    }
+    
+    /* Auth */
+    .auth-card {
+      padding: 20px;
+    }
+  }
+  
+  /* Extra Small Screens (Mobile Phones) */
+  @media screen and (max-width: 576px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+    
+    /* Dashboard Header */
+    .dashboard-header h1 {
+      font-size: 1.5rem;
+    }
+    
+    /* Status Badges */
+    .status-badge {
+      padding: 2px 6px;
+      font-size: 0.7rem;
+    }
+    
+    /* Action Buttons */
+    .action-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .action-buttons a, .action-buttons button {
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Internship Details */
+    .details-header, .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    /* Forms */
+    .form-container, .auth-card {
+      padding: 15px;
+    }
+    
+    .filters-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .filter-group {
+      margin-bottom: 15px;
+    }
+    
+    /* Pagination */
+    .pagination {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    .pagination-btn {
+      padding: 4px 8px;
+      font-size: 0.8rem;
+    }
+    
+    /* File Upload */
+    .file-button {
+      padding: 8px 12px;
+    }
+    
+    /* Not Found Page */
+    .not-found-container h1 {
+      font-size: 3rem;
+    }
+    
+    .not-found-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Small Height Screens */
+  @media screen and (max-height: 600px) {
+    .auth-container {
+      min-height: auto;
+      padding: 30px 0;
+    }
+  }
+  
+  /* Print Styles */
+  @media print {
+    body {
+      background-color: white;
+      color: black;
+    }
+    
+    .header, .footer, .form-actions, .action-buttons, .back-btn {
+      display: none;
+    }
+    
+    .container, .dashboard-container, .internship-details-container {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .dashboard-section, .stat-card, .internship-details-card, .verify-internship-card, 
+    .report-results {
+      box-shadow: none;
+      border: 1px solid #ccc;
+      break-inside: avoid;
+    }
+    
+    .results-table-container {
+      overflow-x: visible;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+    
+    /* Avoid page breaks inside important elements */
+    tr, .detail-item, .document-item, .internship-section, .details-section {
+      page-break-inside: avoid;
+    }
+    
+    /* Force displaying background colors for status badges */
+    .status-badge {
+      border: 1px solid black;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    
+    .status-badge.verified {
+      background-color: #d4edda !important;
+      color: #155724 !important;
+    }
+    
+    .status-badge.pending {
+      background-color: #fff3cd !important;
+      color: #856404 !important;
+    }
+    
+    /* Add page header and footer */
+    @page {
+      margin: 2cm;
+    }
+    
+    /* Add page numbers */
+    @page {
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+      }
+    }
+  }
+  
+  /* High Contrast Mode for Accessibility */
+  @media (prefers-contrast: high) {
+    :root {
+      --primary-color: #0066cc;
+      --primary-dark: #004c99;
+      --secondary-color: #cc0000;
+      --secondary-dark: #990000;
+      --success-color: #007700;
+      --success-dark: #004d00;
+      --warning-color: #cc6600;
+      --warning-dark: #994c00;
+    }
+    
+    body {
+      color: black;
+      background-color: white;
+    }
+    
+    input, select, textarea {
+      border: 2px solid black;
+    }
+    
+    .btn, .action-btn, .view-link, .document-link {
+      border: 2px solid black;
+    }
+    
+    .nav-link, .status-badge {
+      border: 1px solid black;
+    }
+    
+    /* Increase contrast for status indicators */
+    .status.verified, .status-badge.verified {
+      background-color: #b6ffb6;
+      color: black;
+      border: 1px solid black;
+    }
+    
+    .status.pending, .status-badge.pending {
+      background-color: #ffcc99;
+      color: black;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary-color: #61a5e0;
+      --primary-dark: #4b8cc8;
+      --secondary-color: #e57373;
+      --secondary-dark: #cf6679;
+      --success-color: #66bb6a;
+      --success-dark: #4caf50;
+      --warning-color: #ffb74d;
+      --warning-dark: #ffa726;
+      --light-color: #303030;
+      --dark-color: #f5f5f5;
+      --gray-color: #757575;
+      --gray-light: #424242;
+      --gray-dark: #bdbdbd;
+    }
+    
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+    
+    .header, .auth-card, .dashboard-section, .stat-card, .internship-card,
+    .internship-details-card, .filters-section, .verify-internship-card,
+    .report-generator, .report-results {
+      background-color: #1e1e1e;
+    }
+    
+    input, select, textarea {
+      background-color: #333;
+      color: #f5f5f5;
+      border-color: #555;
+    }
+    
+    th {
+      background-color: #333;
+    }
+    
+    /* Adjust status colors for dark mode */
+    .status.verified, .status-badge.verified {
+      background-color: rgba(102, 187, 106, 0.3);
+    }
+    
+    .status.pending, .status-badge.pending {
+      background-color: rgba(255, 183, 77, 0.3);
+    }
+    
+    .detail-item, .document-item, .batch-stat-item, .company-stat-item {
+      background-color: #333;
+    }
+    
+    .back-btn {
+      background-color: #333;
+    }
+    
+    /* Invert selected icons for better visibility */
+    .sort-indicator.asc {
+      border-bottom-color: #f5f5f5;
+    }
+    
+    .sort-indicator.desc {
+      border-top-color: #f5f5f5;
+    }
+  }
+  
+  /* Reduced Motion Preference */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+      animation: none !important;
+    }
+    
+    .internship-card:hover {
+      transform: none;
+    }
+    
+    .loading-spinner .spinner-circle {
+      animation: none;
+    }
+  }
