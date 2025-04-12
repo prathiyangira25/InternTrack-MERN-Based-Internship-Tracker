@@ -7,6 +7,9 @@ backend/.env
 # Ignore other sensitive files (e.g., API keys, config files)
 backend/*.json
 
+# Ignore the Google Cloud Service Account credentials file
+interntrack-455506-6c97b4a164f9.json
+
 # Ignore logs
 *.log
 
